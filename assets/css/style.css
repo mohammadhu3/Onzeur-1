@@ -1,0 +1,26 @@
+*{
+    touch-action: none;
+}
+img{
+    width: 100%;
+}
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#diapo{
+    width: 90vw;
+    transition: all .5s;
+}
+.moveleft{
+    transform: translateX(-100vw);
+}
+.moveright{
+    transform: translateX(100vw);;
+}
+.playPauseBtn{
+    color: blue;
+    font-size: 3rem;
+}
