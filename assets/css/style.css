@@ -1,26 +1,33 @@
-*{
-    touch-action: none;
+#controls {
+  width: 100px;
+  padding:20px;
+  background-color: #027e17;
+  border-radius: 80px;
+  
+  
+  
 }
-img{
-    width: 100%;
+
+#controls i.playPauseBtn {
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+  
 }
-#container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+#controls i.playPauseBtn:hover {
+  color: #cccccc;
 }
-#diapo{
-    width: 90vw;
-    transition: all .5s;
+
+#controls .fa-forward-step,
+#controls .fa-backward-step {
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+ 
 }
-.moveleft{
-    transform: translateX(-100vw);
-}
-.moveright{
-    transform: translateX(100vw);;
-}
-.playPauseBtn{
-    color: blue;
-    font-size: 3rem;
+
+#controls .fa-forward-step:hover,
+#controls .fa-backward-step:hover {
+  color: #fff;
 }
