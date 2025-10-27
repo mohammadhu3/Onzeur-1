@@ -8,6 +8,11 @@
   
 }
 
+#container ,img {
+  width: 500px;
+
+}
+
 #controls i.playPauseBtn {
   font-size: 26px;
   color: #fff;
@@ -30,4 +35,11 @@
 #controls .fa-forward-step:hover,
 #controls .fa-backward-step:hover {
   color: #fff;
+}
+
+
+#playlist{
+   color: #000000;
+  font-size: 16px;
+
 }

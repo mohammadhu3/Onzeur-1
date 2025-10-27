@@ -4,7 +4,7 @@ const catalogue = [
         artiste : "Jill Scott",
         genre : ["Hip Hop","Funk/Soul"],
         annee : 2004,
-        cover : "golden-Jill-Scott.jpg",
+        cover : "golden-Jill-Scott",
         audio : "Beiderbecke, Bix (1924-27) - Giants of Jazz disc 1 (BLP)-cr-04.mp3",
         album : "Golden",
         like : false

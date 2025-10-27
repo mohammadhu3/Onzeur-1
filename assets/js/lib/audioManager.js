@@ -32,4 +32,9 @@ const previousTrack = (url) => {
     audio.src = "./assets/audio/" + url;
     audio.play();
 }
-export { initAudioManager, playPause, nextTrack, previousTrack }
+const playFormPlaylist = (url)=>{
+    audio.pause();
+    audio.src = "./assets/audio/" + url;
+    audio.play()
+}
+export { initAudioManager, playPause, nextTrack, previousTrack, playFormPlaylist }
