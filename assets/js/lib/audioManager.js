@@ -20,7 +20,7 @@ const nextTrack = () => {
     }
     console.log(currentTrack);
     audio.pause();
-    audio.src = "./assets/audio/" + catalogue[currentTrack].audio;
+    audio.src = "./assets/audio/"+ catalogue[currentTrack].audio;
     audio.play();
 }
 const previousTrack = () => {
@@ -31,7 +31,7 @@ const previousTrack = () => {
     }
     console.log(currentTrack);
     audio.pause();
-    audio.src = "./assets/audio/" + catalogue[currentTrack].audio;
+    audio.src = "./assets/audio/"+ catalogue[currentTrack].audio;
     audio.play();
 }
 const playFormPlaylist = (url)=>{
