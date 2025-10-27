@@ -1,17 +1,14 @@
-import { nextTrack } from "./audioManager.js";
+import { nextTrack, previousTrack } from "./audioManager.js";
 import { catalogue} from "./catalogue.js";
 import {statePlayBtn } from "./controls.js"
 
 const initDiapo = () => {
     console.log("initDiapo");
-    const images = [
-        "./assets/img/photo1.jpg",
-        "./assets/img/photo2.jpg",
-        "./assets/img/photo3.jpg",
-        "./assets/img/photo4.jpg"
-    ]
+   
+
     const diapo = document.getElementById("diapo");
     const imgDiapo = document.querySelector("#diapo>img");
+    imgDiapo.src="./assets/img/cover/"+catalogue[currentTrack].cover;
 
     let mvtCss = "";
     let scale = 100;
@@ -41,20 +38,17 @@ const initDiapo = () => {
             mvtCss = "moveleft";
             // une seconde position pour gerer le currentTrack qui
             // va gerer le src de mon image à venir
-            nextTrack(catalogue[currentTrack].audio);
+            previousTrack();
             statePlayBtn();
 
         } else if (event.type === "swiperight") {
             mvtCss = "moveright";
             // a l'inverse
-            if (currentTrack === 0) {
-                currentTrack = images.length - 1;
-            } else {
-                currentTrack--;
-            }
+            // url > gerer par 
+          nextTrack();
         }
 
-        imgDiapo.src = images[currentTrack];
+        imgDiapo.src="./assets/img/cover/"+catalogue[currentTrack].cover;
 
     })
 }

@@ -1,4 +1,4 @@
-import { nextTrack, playPause } from "./audioManager.js";
+import { nextTrack, playPause, previousTrack } from "./audioManager.js";
 import { catalogue } from "./catalogue.js";
 
 const initControls = () => {
@@ -10,7 +10,7 @@ const initControls = () => {
     backwardBtn.classList.add("fa-solid", "fa-backward-step", "playPauseBtn")
     controls.append(backwardBtn);
     backwardBtn.addEventListener("click", () => {
-        nextTrack(catalogue[currentTrack].audio);
+        previousTrack();
         statePlayBtn();
     })
     const playPauseBtn = document.createElement("i");
@@ -25,7 +25,7 @@ const initControls = () => {
     forwardBtn.classList.add("fa-solid", "fa-forward-step", "playPauseBtn")
     controls.append(forwardBtn);
     forwardBtn.addEventListener("click", () => {
-        nextTrack(catalogue[currentTrack].audio);
+        nextTrack();
         statePlayBtn();
     })
 }

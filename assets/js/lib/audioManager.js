@@ -1,3 +1,5 @@
+import { catalogue } from "./catalogue.js";
+
 const initAudioManager = (url) => {
     console.log("initAudioManager");
     const audio = new Audio("./assets/audio/" + url)
@@ -10,7 +12,7 @@ const playPause = () => {
         audio.play();
     }
 }
-const nextTrack = (url) => {
+const nextTrack = () => {
     if(currentTrack === catalogueLength -1){
         currentTrack = 0;
     } else {
@@ -18,10 +20,10 @@ const nextTrack = (url) => {
     }
     console.log(currentTrack);
     audio.pause();
-    audio.src = "./assets/audio/" + url;
+    audio.src = "./assets/audio/" + catalogue[currentTrack].audio;
     audio.play();
 }
-const previousTrack = (url) => {
+const previousTrack = () => {
     if(currentTrack === 0){
         currentTrack = catalogueLength -1;
     } else {
@@ -29,7 +31,7 @@ const previousTrack = (url) => {
     }
     console.log(currentTrack);
     audio.pause();
-    audio.src = "./assets/audio/" + url;
+    audio.src = "./assets/audio/" + catalogue[currentTrack].audio;
     audio.play();
 }
 const playFormPlaylist = (url)=>{

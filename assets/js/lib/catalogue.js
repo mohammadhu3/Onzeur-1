@@ -1,12 +1,12 @@
 const catalogue = [
     {
-        titre : "Golden",
-        artiste : "Jill Scott",
-        genre : ["Hip Hop","Funk/Soul"],
-        annee : 2004,
-        cover : "golden-Jill-Scott",
+        titre : "Natural",
+        artiste:"Imagine Dragons",
+        genre : ["Pop Rock"],
+        annee : 2018,
+        cover : "golden-Jill-Scott.jpg",
         audio : "Beiderbecke, Bix (1924-27) - Giants of Jazz disc 1 (BLP)-cr-04.mp3",
-        album : "Golden",
+        album : "Origins",
         like : false
     },
     {
